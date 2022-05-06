@@ -5,14 +5,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-  font-family: "Lato", sans-serif;
+  font-family: noto sans mono;
 }
 
-/* Fixed sidenav, full height */
+
 .sidenav {
+  position: absolute; /* remove if you want to make not full height */
   height: 100%;
-  width: 200px;
-  
+  width: 150px;
+  font-family: noto sans mono;
   z-index: 1;
   top: 0;
   left: 0;
@@ -21,12 +22,12 @@ body {
   padding-top: 10px;
 }
 
-/* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: green;
+  font-family: noto sans mono;
   background-color: #000000;
   display: block;
   border: none;
@@ -37,40 +38,38 @@ body {
   outline: none;
 }
 
-/* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: red;
 }
 
-/* Main content */
-/*.main {
+.main {
   margin-left: 200px;  Same as the width of the sidenav 
   font-size: 20px; Increased text to enable scrolling 
-  padding: 0px 10px; */
+  padding: 0px 10px; 
 }
 
-/* Add an active class to the active dropdown button */
+
 .active {
   background-color: #000000;
   color: green;
 }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
+  font-size: 16px;
   background-color: #000000;
-  padding-left: 8px;
+  padding-left: 30px;
 }
 
-/* Optional: Style the caret down icon */
+
 .fa-caret-down {
   float: right;
   padding-right: 8px;
 }
-/* Some media queries for responsiveness */
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 16px;}
 }
 
 </style>
@@ -78,11 +77,9 @@ body {
 <body>
 
 <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Dropdown 
+  <a href="#">Home</a>
+  <a href="#">Projects</a>
+  <button class="dropdown-btn">Blog 
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
@@ -90,7 +87,7 @@ body {
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
-  <a href="#contact">Search</a>
+  <a href="#">Legal</a>
 </div>
 
 <div class="main">
@@ -101,7 +98,6 @@ body {
 </div>
 
 <script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
