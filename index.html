@@ -5,20 +5,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
+
   font-family: noto sans mono;
 }
 
 
 .sidenav {
-  position: absolute; /* remove if you want to make not full height */
+
   height: 100%;
+  overflow-x: hidden;
+  border: 1px solid black;
   width: 150px;
   font-family: noto sans mono;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
+  position: absolute;
   padding-top: 10px;
 }
 
@@ -38,16 +41,23 @@ body {
   outline: none;
 }
 
-.sidenav a:hover, .dropdown-btn:hover {
+.sidenav a:hover, .dropdown-btn:hover, .toggle:hover {
   color: red;
 }
 
 .main {
   margin-left: 200px;  Same as the width of the sidenav 
   font-size: 20px; Increased text to enable scrolling 
-  padding: 0px 10px; 
+  padding: 0px 0px; 
 }
 
+.toggle {
+background-color: #000000;
+color: green;
+margin: 0px 0px;
+font-size: 20px;
+border: 1px solid grey;
+}
 
 .active {
   background-color: #000000;
@@ -75,8 +85,10 @@ body {
 </style>
 </head>
 <body>
-
-<div class="sidenav">
+<button id="tbtn" class="toggle" onclick="toggle()">Toggle</button>
+<div id="sidenav1" class="sidenav">
+  <a></a>
+  <a></a>
   <a href="#">Home</a>
   <a href="#">Projects</a>
   <button class="dropdown-btn">Blog 
@@ -113,6 +125,18 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
+<script>
+function toggle() {
+  var dt = document.getElementById("sidenav1");
+  var tbtn = document.getElementById("tbtn");
+  if (dt.style.display === "none") {
+    dt.style.display = "block";
+    tbtn.style.margin = "0px 0px";
+  } else {
+    dt.style.display = "none";
+    tbtn.style.margin = "0px 0px";
+  }
+}
+</script>
 </body>
 </html> 
