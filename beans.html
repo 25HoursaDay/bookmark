@@ -1,1 +1,27 @@
-
+<html>
+  <head> 
+  <script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
+    <script>
+      alert = function(){};
+      window.alert = function() {};
+    </script>
+    <script>
+      document.addEventListener('keydown', (e) => {
+      if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault();} 
+      else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault();} 
+      else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault();}});
+    </script>
+    <script>
+      document.oncontextmenu = rightClick;
+      function rightClick(clickEvent) {clickEvent.preventDefault();};
+    </script>
+  <style>
+  body {
+    font-family: noto sans mono;
+    background-color: #000000;
+    }
+  </style>
+   
+  </head>
+  
+</html>
