@@ -43,9 +43,10 @@ body {
 }
 
 .main {
-  margin-left: 200px;  Same as the width of the sidenav 
-  font-size: 20px; Increased text to enable scrolling 
-  padding: 0px 0px; 
+  margin-left: 200px;
+  margin-top: 0px;
+  font-size: 20px; 
+ 
 }
 
 .toggle {
@@ -69,21 +70,13 @@ border: none;
   padding-left: 30px;
 }
 
-.totaldiv {
-margin: 0px 0px;
-width: 150px;
-position:absolute;
-}
 
 .fa-caret-down {
   float: right;
   padding-right: 8px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 16px;}
-}
+
 
 </style>
 </head>
@@ -104,7 +97,7 @@ position:absolute;
   <a href="#">Legal</a>
 </div>
 </div>
-<div class="main">
+<div id="main" class="main">
   <h2>Sidebar Dropdown</h2>
   <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
   <p>This sidebar is of full height (100%) and always shown.</p>
@@ -131,9 +124,11 @@ for (i = 0; i < dropdown.length; i++) {
 function toggle() {
   var dt = document.getElementById("sidenav1");
   var tbtn = document.getElementById("tbtn");
+  var mn = document.getElementById("main");
   if (dt.style.display === "none") {
     dt.style.display = "block";
     tbtn.style.margin = "0px 0px";
+    mn.style.margin = "";
   } else {
     dt.style.display = "none";
     tbtn.style.margin = "0px 0px";
