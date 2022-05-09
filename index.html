@@ -19,10 +19,10 @@ body {
   z-index: 1;
   position: absolute;
   background-color: #111;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
-.sidenav a, .dropdown-btn {
+.sidenav a, .dropdown-btn, .navx {
   padding: 6px 8px 6px 10px;
   text-decoration: none;
   font-size: 16px;
@@ -38,8 +38,13 @@ body {
   outline: none;
 }
 
-.sidenav a:hover, .dropdown-btn:hover, .toggle:hover {
+.toggle:hover {
   color: red;
+}
+
+.sidenav a:hover, .dropdown-btn:hover, .navx:hover {
+  color: red;
+  font-size: 17px;
 }
 
 .main {
@@ -53,10 +58,15 @@ body {
 background-color: #000000;
 color: green;
 width: 152px;
-font-size: 20px;
+font-size: 17px;
 border: none;
-
+margin: 0px 0px;
+position: absolute;
+padding: 6px 8px 6px 10px;
+text-align: left;
 }
+
+
 
 .active {
   background-color: #000000;
@@ -81,9 +91,10 @@ border: none;
 </style>
 </head>
 <body>
-<div class="totaldiv">
-<button id="tbtn" class="toggle" onclick="toggle()">Toggle Menu</button>
+
+<button id="tbtn" class="toggle" onclick="toggle()">Open Menu</button>
 <div id="sidenav1" class="sidenav">
+<button id="navx" class="navx" onclick="toggle()">Close Menu</button>
   <a href="#">Home</a>
   <a href="#">Projects</a>
   <button class="dropdown-btn">Blog 
@@ -96,7 +107,7 @@ border: none;
   </div>
   <a href="#">Legal</a>
 </div>
-</div>
+
 <div id="main" class="main">
   <h2>Sidebar Dropdown</h2>
   <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
@@ -119,21 +130,18 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-</script>
-<script>
 function toggle() {
   var dt = document.getElementById("sidenav1");
   var tbtn = document.getElementById("tbtn");
-  var mn = document.getElementById("main");
   if (dt.style.display === "none") {
     dt.style.display = "block";
-    tbtn.style.margin = "0px 0px";
-    mn.style.margin = "";
+    tbtn.style.display = "none";
   } else {
     dt.style.display = "none";
-    tbtn.style.margin = "0px 0px";
+    tbtn.style.display = "block";
   }
 }
+document.getElementById("sidenav1").style.display = "none";
 </script>
 </body>
 </html> 
