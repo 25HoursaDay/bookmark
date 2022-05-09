@@ -2,8 +2,8 @@
 let style = document.createElement("style")
 // basically creating all elements + adding id's
 let title = document.createElement("h1")
-let ds1 = document.createElement("p")
-ds1.id = "ds1"
+let otext = document.createElement("p")
+otext.id = "otext"
 title.id = "title"
 let btn1 = document.createElement("div")
 btn1.id = "btn1"
@@ -15,7 +15,7 @@ let btn4 = document.createElement("div")
 btn4.id = "btn4"
 let backbtn = document.createElement("button")
 backbtn.id = "backbtn"
-ds1.style.display = "none"
+otext.style.display = "none"
 let author = document.createElement("h2")
 author.id = "author"
 document.head.appendChild(style)
@@ -29,7 +29,7 @@ document.body.appendChild(mainframe)
 mainframe.append(title)
 mainframe.append(backbtn)
 mainframe.append(author)
-mainframe.appendChild(ds1)
+mainframe.appendChild(otext)
 logo.src = "";
 // appending all elements
 mainframe.id = "main"
