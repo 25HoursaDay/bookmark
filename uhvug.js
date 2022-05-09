@@ -37,7 +37,7 @@ document.body.appendChild(mainframe)
 mainframe.append(title)
 mainframe.append(backbtn)
 mainframe.append(author)
-mainframe.appendChild(ds1)
+mainframe.appendChild(otext)
 mainframe.append(btn1)
 mainframe.append(btn2)
 mainframe.append(btn3)
@@ -53,7 +53,7 @@ btn1.textContent = ""
 btn2.textContent = ""
 btn3.textContent = ""
 btn4.textContent = ""
-ds1.style.display = "none"
+otext.style.display = "none"
 
 // when button is clicked
 
