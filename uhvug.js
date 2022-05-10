@@ -28,7 +28,7 @@ frame.append(title);
 frame.append(backbtn);
 frame.append(undertitle);
 frame.appendChild(otext);
-icon.src = "";
+icon.src = "https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico";
 frame.id = "main";
 document.body.appendChild(frame);
 frame.append(title);
@@ -50,15 +50,24 @@ btn3.textContent = "About";
 btn4.textContent = "Legal";
 otext.style.display = "none";
 
-btn1.onclick(function btn1() {
+frame.style.backgroundColor = "black";
+title.style.color = "green";
+otext.style.color = "green";
+btn1.style.color = "green";
+btn2.style.color = "green";
+btn3.style.color = "green";
+btn4.style.color = "green";
+undertitle.style.color "green";
 
+btn1.onclick(function btn1() {
+alert("btn1");
 };
 btn2.onclick = function btn2() {
-
+alert("btn2");
 };
 btn3.onclick = function btn3() {
-
+alert("btn3");
 };
 btn4.onclick = function btn4() {
-
+alert("btn4");
 };
