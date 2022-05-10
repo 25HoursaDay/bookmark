@@ -1,5 +1,4 @@
 let style = document.createElement("style");
-frame.style.fontFamily = "noto sans mono";
 let title = document.createElement("h1");
 let otext = document.createElement("p");
 otext.id = "otext";
@@ -71,3 +70,50 @@ alert("btn3");
 btn4.onclick = function btn4() {
 alert("btn4");
 };
+
+style.textContent = `
+#main {
+  background-color: black;
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+  animation-name: slidein;
+  animation-duration: 2s;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+}
+#title, #undertext {
+  color: green;
+  font-family: "noto sans mono";
+  padding: 10px;
+}
+#btn1, #btn2, #btn3, #btn4 {
+  background-color: grey;
+  color: green;
+  font-family: "noto sans mono";
+  margin: 10px;
+  font-size: 20px;
+  
+}
+#btn2:hover,#btn1:hover, #btn3:hover, #btn4:hover {
+  background-color: white;
+  color: black;
+  font-family: "noto sans mono";
+  margin: 10px;
+  font-size: 20px;
+}
+#otext {
+  color: green;
+  font-family: "noto sans mono";
+  font-family: 10px;
+}
+@keyframes slidein {
+  0% {
+    opacity: 0%
+  }
+  100% {
+    opactiy: 100%
+  }
+}
+`
