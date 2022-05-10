@@ -10,7 +10,7 @@
   margin: 0px auto;
   position: relative;
 }
-.title, .author {
+.title, .under {
   color: white;
   font-family: "Helvetica";
   padding: 10px;
@@ -29,10 +29,10 @@
   margin: 10px;
   font-size: 20px;
 }
-.ds1 {
+.output {
   color: yellow;
   font-family: "Helvetica";
-  font-family: 10px;
+  font-size: 10px;
 }
 @keyframes slidein {
   0% {
@@ -42,5 +42,12 @@
     opactiy: 100%
   }
 }
-
 </style>
+
+<h1 id="title">Title</h1>
+<p id="output">Output</p>
+<button id="btn1">btn1<button>
+<button id="btn2">btn2<button>
+<button id="btn3">btn3<button>
+<button id="btn4">btn4<button>
+<script>output.style.display = "none";</script>
