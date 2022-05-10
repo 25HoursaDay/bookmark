@@ -1,4 +1,5 @@
 let style = document.createElement("style");
+frame.style.fontFamily = "noto sans mono";
 let title = document.createElement("h1");
 let otext = document.createElement("p");
 otext.id = "otext";
