@@ -20,7 +20,6 @@ document.head.appendChild(style);
 let frame = document.createElement("div");
 let icon = document.createElement("img");
 frame.appendChild(logo);
-frame.id = "frame";
 frame.id = "main";
 document.body.appendChild(frame);
 frame.append(title);
@@ -28,7 +27,6 @@ frame.append(backbtn);
 frame.append(undertitle);
 frame.appendChild(otext);
 icon.src = "https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico";
-frame.id = "main";
 document.body.appendChild(frame);
 frame.append(title);
 frame.append(backbtn);
@@ -56,7 +54,45 @@ btn1.style.color = "green";
 btn2.style.color = "green";
 btn3.style.color = "green";
 btn4.style.color = "green";
+
+btn1.style.fontSize = "20px";
+btn2.style.fontSize = "20px";
+btn3.style.fontSize = "20px";
+btn4.style.fontSize = "20px";
+
+btn1.style.margin = "10px";
+btn2.style.margin = "10px";
+btn3.style.margin = "10px";
+btn4.style.margin = "10px";
+
+btn1.style.backgroundColor = "grey";
+btn2.style.backgroundColor = "grey";
+btn3.style.backgroundColor = "grey";
+btn4.style.backgroundColor = "grey";
+
 undertitle.style.color "green";
+undertitle.style.padding = "10px";
+undertitle.fontSize = "10px";
+title.style.fontFamily = "noto sans mono";
+title.style.padding = "10px";
+otext.style.fontFamily = "noto sans mono";
+btn1.style.fontFamily = "noto sans mono";
+btn2.style.fontFamily = "noto sans mono";
+btn3.style.fontFamily = "noto sans mono";
+btn4.style.fontFamily = "noto sans mono";
+undertitle.style.fontFamily = "noto sans mono";
+
+frame.style.color = "green";
+frame.style.fontFamily = "noto sans mono";
+frame.style.height = "600px";
+frame.style.width = "800px";
+frame.style.borderRadius = "10px";
+frame.style.animationName = "slidein";
+frame.style.animationDuration = "2s";
+frame.style.textAlign = "center";
+frame.style.margin = "0px auto";
+frame.style.position = "relative";
+
 
 btn1.onclick(function btn1() {
 alert("btn1");
@@ -71,7 +107,6 @@ btn4.onclick = function btn4() {
 alert("btn4");
 };
 
-var css1 = document.getElementById("btn1")
 
 style.textContent = `
 #main {
