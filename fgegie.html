@@ -46,20 +46,20 @@
 </head>
 <body>
   
-<div id="main">
-<img src=""></img>
-<h1 id="title">Title</h1>
-<h2 id="under">Under</h2>
+<div id="main" class="main">
+<img src="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"></img>
+<h1 class="title" id="title">Title</h1>
+<h2 class="under" id="under">Under</h2>
 
-<button id="btn1" onclick="btn1()">btn1<button>
-<button id="btn2" onclick="btn2()">btn2<button>
-<button id="btn3" onclick="btn3()">btn3<button>
-<button id="btn4" onclick="btn4()">btn4<button>
+<button class="btn1" id="btn1" onclick="btn1()">btn1<button>
+<button class="btn2" id="btn2" onclick="btn2()">btn2<button>
+<button class="btn3" id="btn3" onclick="btn3()">btn3<button>
+<button class="btn4" id="btn4" onclick="btn4()">btn4<button>
   
-<p id="output">Output</p>
+<p class="output" id="output">Output</p>
 
 <script>
-output.style.display = "none";
+document.getElementById("output").style.display = "none";
   
 function btn1() {
 alert("btn1");
