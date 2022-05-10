@@ -71,6 +71,8 @@ btn4.onclick = function btn4() {
 alert("btn4");
 };
 
+var css1 = document.getElementById("btn1")
+
 style.textContent = `
 #main {
   background-color: black;
