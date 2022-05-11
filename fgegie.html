@@ -5,53 +5,50 @@
   text-align: center;
   }
   .main {
+  border: 6px green solid;
   background-color: black;
-  width: 800px;
-  height: 600px;
-  border-radius: 10px;
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
   animation-name: slidein;
   animation-duration: 2s;
   margin: auto;
-  position: relative;
+  position: relative; 
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 .title, .under {
   color: green;
-  padding: 10px;
+  padding: 0px;
+}
+.title a:hover, .under a:hover {
+  color: red;
 }
 .btn1, .btn2, .btn3, .btn4 {
   color: green;
-  background-color: grey;
+  background-color: #000000;
   font-size: 20px;
-  border-radius: 16px;
-  padding: 1px;
-  border: none;
-  position: absolute;
+  border-radius: 51122px;
+  border: green solid;
+  margin: 10px;
+  position: relative;
+  width: 450px;
+  height: 40px;
 }
- .btn1 {
-  margin-top: 10px;
-  position: relative;
-  width: 50%;
-} 
-  .btn2 {
-  margin-top: 40px;
-  position: relative;
-  width: 50%;
-}  
-  .btn3 {
-  margin-top: 140px;
-  margin-side: 50%;
-} 
-  .btn4 {
-  margin-top: 160px;
-  margin-side: 50%;
-} 
+
   
 .btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover {
   color: red;
+  border: red solid;
+  font-size: 22px;
 }
 .output {
-  color: yellow;
+  color: green;
   font-size: 10px;
+}
+.output:onhover {
+  color: red;
+  font-size: 15px;
 }
 @keyframes slidein {
   0% {
@@ -66,9 +63,9 @@
 <body>
   
 <div id="main" class="main">
-<img src="https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"></img>
-<h1 class="title" id="title">Title</h1>
-<h2 class="under" id="under">Under</h2>
+<img src="IMAGE"></img>
+<h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
+<h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay.</a></h2>
 
 <button class="btn1" id="btn1" onclick="btn1()">btn1</button>
 <button class="btn2" id="btn2" onclick="btn2()">btn2</button>
