@@ -66,3 +66,6 @@ mo("output", "red", "red", "15px");
 mo("exit", "red", "red", "initial");
 
 se("btn1", "btn1()");
+se("btn2", "btn2()");
+se("btn3", "btn3()");
+se("btn4", "btn4()");
