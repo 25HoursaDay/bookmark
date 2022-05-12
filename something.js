@@ -14,6 +14,13 @@ let btn3 = document.createElement("button");
 let btn4 = document.createElement("button");
 let output = document.createElement("p");
 let scripting = document.createElement("script");
+//appending crap
+document.head.appendChild(main);
+main.append();
+main.append(btn1);
+main.append(btn2);
+main.append(btn3);
+main.append(btn4);
 // setting css
 main.style.fontFamily  = "noto sans mono";
 main.style.textAlign  = "center";
