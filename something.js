@@ -46,4 +46,8 @@ main.style.marginBottom  = "30px";
 title.style.color = "green";
 heading.style.color = "green";
 // extra scripts
-
+function mo(ele, col, fonsiz, borsiz) {
+  ele.style.color = col;
+  ele.style.fontSize = fonsiz;
+  ele.style.border = borsiz +"  "+ col +"solid";
+};
