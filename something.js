@@ -1,6 +1,5 @@
 // creating elements 
 let main = document.createElement("div");
-let headcss = document.createElement("head");
 let style = document.createElement("style");
 let exit = document.createElement("button");
 let logo = document.createElement("image");
@@ -32,19 +31,18 @@ main.append(output);
 // setting css
 main.style.fontFamily  = "noto sans mono";
 main.style.textAlign  = "center";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
-main.style.  = "";
+main.style.border  = "6px green solid";
+main.style.backgroundColor  = "black";
+main.style.width  = "";
+main.style.height  = "";
+main.style.borderRadius  = "";
+main.style.animationName  = "";
+main.style.animationDuration  = "";
+main.style.margin  = "";
+main.style.position = "";
+main.style.marginTop  = "";
+main.style.paddingBottom  = "";
+main.style.marginBottom  = "";
 headcss.style.fontFamily = "noto sans mono";
 headcss.style.textAlign = "center";
 
