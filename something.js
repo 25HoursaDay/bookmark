@@ -46,8 +46,16 @@ main.style.marginBottom  = "30px";
 title.style.color = "green";
 heading.style.color = "green";
 // extra scripts
-function mo(ele, col, fonsiz, borsiz) {
-  ele.style.color = col;
-  ele.style.fontSize = fonsiz;
-  ele.style.border = borsiz +"  "+ col +"solid";
+function mo(ele, col1, col2, siz) {
+  ele.style.color = col1;
+  ele.style.fontSize = siz;
+  ele.style.borderColor = col2;
 };
+
+mo("titleA", "red", "red", "initial");
+mo("headingA", "red", "red", "initial");
+mo("btn1", "red", "red", "22px");
+mo("btn2", "red", "red", "22px");
+mo("btn3", "red", "red", "22px");
+mo("btn4", "red", "red", "22px");
+mo("output", "red", "red", "15px");
