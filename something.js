@@ -16,11 +16,19 @@ let output = document.createElement("p");
 let scripting = document.createElement("script");
 //appending crap
 document.head.appendChild(main);
-main.append();
+main.append(exit);
+main.append(logo);
+main.append(title);
+title.append(titleA);
+titleA.innerText = "&#60/Hecker.bat/&#62";
+main.append(heading);
+heading.append(headingA);
+headingA.innerText = "A Bookmarklet By: 25HoursaDay.";
 main.append(btn1);
 main.append(btn2);
 main.append(btn3);
 main.append(btn4);
+main.append(output);
 // setting css
 main.style.fontFamily  = "noto sans mono";
 main.style.textAlign  = "center";
