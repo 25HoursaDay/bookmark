@@ -47,15 +47,30 @@ heading.style.color = "green";
 titleA.innerText = "&#60/Hecker.bat/&#62";
 headingA.innerText = "A Bookmarklet By: 25HoursaDay.";
 function mo(e, c1, c2, s1) {
+  e.onmouseover = function(){
   e.style.color = c1;
   e.style.fontSize = s1;
   e.style.borderColor = c2;
+  };
 };
+function s() {
+  color = green;
+  backgroundColor= #000000;
+  fontSize = 20px;
+  borderRadius = 51122px;
+  border = green solid;
+  margin = 10px;
+  position = relative;
+  width = 450px;
+  height = 40px;
+};
+
 function se(e, o) {
   e.id = e;
   e.class = e;
   e.onclick = o;
 };
+
 mo("titleA", "red", "red", "initial");
 mo("headingA", "red", "red", "initial");
 mo("btn1", "red", "red", "22px");
@@ -69,3 +84,6 @@ se("btn1", "btn1()");
 se("btn2", "btn2()");
 se("btn3", "btn3()");
 se("btn4", "btn4()");
+se("exit", "exit()");
+
+btn1.style.
