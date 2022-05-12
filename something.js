@@ -45,7 +45,5 @@ main.style.paddingBottom  = "20px";
 main.style.marginBottom  = "30px";
 title.style.color = "green";
 heading.style.color = "green";
-headcss.style.fontFamily = "noto sans mono";
-headcss.style.textAlign = "center";
 // extra scripts
 
