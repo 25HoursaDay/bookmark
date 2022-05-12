@@ -1,4 +1,5 @@
 let main = document.createElement("div");
+let forcss = document.createElement("head");
 let gui = document.createElement("style");
 let exit = document.createElement("button");
 let logo = document.createElement("image");
