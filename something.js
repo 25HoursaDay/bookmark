@@ -19,10 +19,8 @@ main.append(exit);
 main.append(logo);
 main.append(title);
 title.append(titleA);
-titleA.innerText = "&#60/Hecker.bat/&#62";
 main.append(heading);
 heading.append(headingA);
-headingA.innerText = "A Bookmarklet By: 25HoursaDay.";
 main.append(btn1);
 main.append(btn2);
 main.append(btn3);
@@ -45,13 +43,19 @@ main.style.paddingBottom  = "20px";
 main.style.marginBottom  = "30px";
 title.style.color = "green";
 heading.style.color = "green";
-// extra scripts
-function mo(ele, col1, col2, siz) {
-  ele.style.color = col1;
-  ele.style.fontSize = siz;
-  ele.style.borderColor = col2;
+// misc scripts
+titleA.innerText = "&#60/Hecker.bat/&#62";
+headingA.innerText = "A Bookmarklet By: 25HoursaDay.";
+function mo(e, c1, c2, s1) {
+  e.style.color = c1;
+  e.style.fontSize = s1;
+  e.style.borderColor = c2;
 };
-
+function se(e, i, c, o) {
+  e.id = i;
+  e.class = c;
+  e.onclick = o;
+};
 mo("titleA", "red", "red", "initial");
 mo("headingA", "red", "red", "initial");
 mo("btn1", "red", "red", "22px");
