@@ -51,9 +51,9 @@ function mo(e, c1, c2, s1) {
   e.style.fontSize = s1;
   e.style.borderColor = c2;
 };
-function se(e, i, c, o) {
-  e.id = i;
-  e.class = c;
+function se(e, o) {
+  e.id = e;
+  e.class = e;
   e.onclick = o;
 };
 mo("titleA", "red", "red", "initial");
@@ -63,3 +63,6 @@ mo("btn2", "red", "red", "22px");
 mo("btn3", "red", "red", "22px");
 mo("btn4", "red", "red", "22px");
 mo("output", "red", "red", "15px");
+mo("exit", "red", "red", "initial");
+
+se("btn1", "btn1()");
