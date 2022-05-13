@@ -53,7 +53,7 @@ btn4.onclick = function btn4() {
 
 }
 
-style.textContent = `
+style.innerHTML = `
 .main {
   background-color: black;
   width: 800px;
