@@ -11,7 +11,6 @@ let btn2 = document.createElement("button");
 let btn3 = document.createElement("button");
 let btn4 = document.createElement("button");
 let output = document.createElement("p");
-let scripting = document.createElement("script");
 //appending crap
 document.head.appendChild(main);
 main.append(exit);
@@ -46,6 +45,7 @@ heading.style.color = "green";
 // misc scripts
 titleA.innerText = "&#60/Hecker.bat/&#62";
 headingA.innerText = "A Bookmarklet By: 25HoursaDay.";
+exit.innerText = "Close";
 function mo(e, c1, c2, s1) {
   e.onmouseover = function(){
   e.style.color = c1;
