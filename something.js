@@ -118,10 +118,11 @@ btn4.style.height = "40px";
 exit.style.fontSize = "20px";
 exit.style.backgroundColor = "black";
 exit.style.marginRight = "100%";
-exit.style.marginTop = "100%";
-exit.style. = "";
-exit.style. = "";
-exit.style. = "";
+exit.style.marginTop = "0%";
+exit.style.position = "relative";
+exit.style.color = "green";
+exit.style.border = "green solid";
+exit.style.borderRadius = "86587px";
 
 output.style.color = "green";
 output.style.fontSize = "10px"
