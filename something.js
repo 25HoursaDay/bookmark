@@ -1,6 +1,5 @@
 // creating elements 
 let main = document.createElement("div");
-let style = document.createElement("style");
 let exit = document.createElement("button");
 let logo = document.createElement("image");
 let title = document.createElement("h1");
@@ -23,6 +22,7 @@ main.append(heading);
 heading.append(headingA);
 main.append(btn1);
 main.append(btn2);
+main.append(scripting);
 main.append(btn3);
 main.append(btn4);
 main.append(output);
