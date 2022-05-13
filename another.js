@@ -15,6 +15,13 @@ btn3.id = "btn3";
 let btn4 = document.createElement("button");
 btn4.id = "btn4";
 
+main.class = "main";
+btn1.class = "btn1";
+btn2.class = "btn2";
+btn3.class = "btn3";
+btn4.class = "btn4";
+title.class = "title";
+heading2.class = "heading2";
 
 document.head.appendChild(style);
 document.body.appendChild(mainframe);
@@ -47,7 +54,7 @@ btn4.onclick = function btn4() {
 }
 
 style.textContent = `
-#main {
+.main {
   background-color: black;
   width: 800px;
   height: 600px;
@@ -58,19 +65,19 @@ style.textContent = `
   margin: 0px auto;
   position: relative;
 }
-#title, #heading2 {
+.title, .heading2 {
   color: white;
   font-family: "Helvetica";
   padding: 10px;
 }
-#btn1, #btn2, #btn3, #btn4 {
+.btn1, .btn2, .btn3, .btn4 {
   background-color: grey;
   color: white;
   font-family: "Helvetica";
   margin: 10px;
   font-size: 20px;
 }
-#btn2:hover,#btn1:hover, #btn3:hover, #btn4:hover {
+.btn2:hover,.btn1:hover, .btn3:hover, .btn4:hover {
   background-color: white;
   color: black;
   font-family: "Helvetica";
