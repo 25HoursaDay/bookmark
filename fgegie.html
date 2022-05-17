@@ -13,7 +13,7 @@
   animation-name: slidein;
   animation-duration: 2s;
   margin: auto;
-  position: relative; 
+  position: sticky; 
   margin-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 30px;
@@ -66,10 +66,13 @@
     border: red solid;
   }
 @keyframes slidein {
-  0% {opacity: 0%}
-  100% {opactiy: 100%}
+  0% {opacity: 0%;}
+  100% {opactiy: 100%;}
 }
 </style>
+  <head>
+<script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
+  </head>
 <button onclick="exit()" class="exit">exit</button>
 <img src="IMAGE"></img>
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
@@ -81,6 +84,14 @@
 <p class="output" id="output">Output</p>
 <script>
 document.getElementById("output").style.display = "none";
+  
+main.oncontextmenu = rightClick;
+function rightClick(clickEvent) {clickEvent.preventDefault();};
+  
+document.addEventListener('keydown', (e) => {
+if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("bru");} 
+else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("bru");} 
+else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("bru");}});
   
 function exit() {
 document.getElementById("main").innerHTML = "";
