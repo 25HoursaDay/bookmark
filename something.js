@@ -1,4 +1,5 @@
 // creating elements 
+let bruhUI = document.createElement("link");
 let main = document.createElement("div");
 let exit = document.createElement("button");
 let logo = document.createElement("image");
