@@ -16,7 +16,7 @@
   color: green;
   padding: 0px;
 }
-.title a:hover, .under a:hover {
+.title a:hover, .heading a:hover {
   color: red;
 }
 .btn1, .btn2, .btn3, .btn4 {
@@ -29,9 +29,7 @@
   position: relative;
   width: inherit;
   height: 40px;
-}
-
-  
+} 
 .btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover {
   color: red;
   border: red solid;
@@ -59,10 +57,6 @@
     border: red solid;
   }
 @keyframes slidein {
-  0% {
-    opacity: 0%
-  }
-  100% {
-    opactiy: 100%
-  }
+  0% {opacity: 0%}
+  100% {opactiy: 100%}
 }
