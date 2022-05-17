@@ -12,9 +12,14 @@ let btn2 = document.createElement("button");
 let btn3 = document.createElement("button");
 let btn4 = document.createElement("button");
 let output = document.createElement("p");
-//appending crap
+//appending main
 document.head.appendChild(main);
+// css
 main.append(bruhUI);
+bruhUI.rel = "stylesheet";
+
+// css
+
 main.append(exit);
 main.append(logo);
 main.append(title);
