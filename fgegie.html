@@ -17,6 +17,7 @@
   margin-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  
 }
 .title, .under {
   color: green;
@@ -36,8 +37,6 @@
   width: 450px;
   height: 40px;
 }
-
-  
 .btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover {
   color: red;
   border: red solid;
@@ -52,29 +51,26 @@
   font-size: 15px;
 }
   .exit {
+    position: relative; 
     font-size: 20px;
     background-color: black;
     border: green solid;
     border-radius: 51122px;
-    padding:6px 6px 6px 6px;
-    top: 0px;
-    right: 0px;
-    position:relative;
+    color: green;
+    padding: 5px;
+    margin: -19px 94%;
   }
-  .exit:onhover {
+  .exit:hover {
     color: red;
+    font-size: 22px;
     border: red solid;
   }
 @keyframes slidein {
-  0% {
-    opacity: 0%
-  }
-  100% {
-    opactiy: 100%
-  }
+  0% {opacity: 0%}
+  100% {opactiy: 100%}
 }
 </style>
-<button onclick="exit()" class="exit">❌</button>
+<button onclick="exit()" class="exit">exit</button>
 <img src="IMAGE"></img>
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay.</a></h2>
