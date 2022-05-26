@@ -1,27 +1,44 @@
 <div id="main" class="main">
   <style>
-  body {
-  font-family: noto sans mono;
-  text-align: center;
- }
+
   .main {
   border: 6px green solid;
   background-color: black;
   width: 500px;
-  height: auto;
+  height: 300px;
   border-radius: 50px;
   animation-name: slidein;
   animation-duration: 2s;
-  margin: auto;
-  position: sticky; 
+  position: absolute; 
   margin-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px;
   margin-bottom: 30px;
-  
+  margin-left: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 1;
+  font-family: noto sans mono;
+  text-align: center;
 }
+  .move {
+  opacity: 0;
+  z-index: 10;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  animation-name: slidein;
+  animation-duration: 2s;
+  }
+    
+  .move:hover {
+  cursor: col-resize;
+  }
+    
 .title, .under {
   color: green;
   padding: 0px;
+  z-index: 2;
+  margin: inherit;
 }
 .title a:hover, .under a:hover {
   color: red;
@@ -33,6 +50,7 @@
   border-radius: 51122px;
   border: green solid;
   margin: 10px;
+  z-index: 3;
   position: relative;
   width: 450px;
   height: 40px;
@@ -42,23 +60,24 @@
   border: red solid;
   font-size: 22px;
 }
-.output {
-  color: green;
-  font-size: 10px;
-}
+
 .output:onhover {
   color: red;
   font-size: 15px;
 }
   .exit {
-    position: relative; 
-    font-size: 20px;
-    background-color: black;
-    border: green solid;
-    border-radius: 51122px;
-    color: green;
-    padding: 5px;
-    margin: -19px 94%;
+  font-size: 20px;
+  background-color: black;
+  border: green solid;
+  border-radius: 51122px;
+  color: green;
+  z-index: 5;
+  padding: 5px;
+  position: relative;
+  font-family: noto sans mono;
+  text-align: center;
+  animation-name: slidein;
+  animation-duration: 2s;
   }
   .exit:hover {
     color: red;
@@ -70,8 +89,6 @@
   100% {opactiy: 100%;}
 }
 </style>
-<button onclick="exit()" class="exit">exit</button>
-<img src="IMAGE"></img>
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay.</a></h2>
 <button class="btn1" id="btn1" onclick="btn1()">btn1</button>
@@ -80,8 +97,6 @@
 <button class="btn4" id="btn4" onclick="btn4()">btn4</button>
 <p class="output" id="output">Output</p>
 <script>
-document.getElementById("output").style.display = "none";
-  
 main.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();};
   
@@ -92,6 +107,8 @@ else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("b
   
 function exit() {
 document.getElementById("main").innerHTML = "";
+document.getElementById("exit").innerHTML = "";
+document.getElementById("move").innerHTML = "";
 };
   
 function btn1() {
@@ -112,4 +129,13 @@ alert("btn4");
   
 </script> 
 </div>
+<img id="move" class="move" src="https://www.w3schools.com/css/img_forest.jpg"></img>
+<button id="exit" onclick="exit()" class="exit">exit</button>
+<script>
+var margin = document.getElementById("exit").style.margin;
+if(margin != document.getElementById("exit").style.margin;) {
+document.getElementById("exit").style.marginTop = document.getElementById("main").style.marginTop;
+document.getElementById("exit").style.marginRight = "";
 
+}
+</script>
