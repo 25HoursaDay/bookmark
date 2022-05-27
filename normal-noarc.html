@@ -1,20 +1,16 @@
-<div id="main" class="main">
+
   <style>
 
   .main {
   border: 6px green solid;
   background-color: black;
   width: 500px;
-  height: 300px;
+  height: 400px;
   border-radius: 50px;
   animation-name: slidein;
   animation-duration: 2s;
   position: absolute; 
-  margin-top: 20px;
   padding: 10px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  overflow-x: hidden;
   overflow-y: scroll;
   z-index: 1;
   font-family: noto sans mono;
@@ -23,11 +19,14 @@
   .move {
   opacity: 0;
   z-index: 10;
-  height: inherit;
-  width: inherit;
+  height: 400px;
+  width: 500px;
   position: absolute;
   animation-name: slidein;
   animation-duration: 2s;
+  border: 6px green solid;
+  border-radius: 50px;
+  padding: 10px;
   }
     
   .move:hover {
@@ -38,7 +37,7 @@
   color: green;
   padding: 0px;
   z-index: 2;
-  margin: inherit;
+  margin: auto;
 }
 .title a:hover, .under a:hover {
   color: red;
@@ -61,10 +60,6 @@
   font-size: 22px;
 }
 
-.output:onhover {
-  color: red;
-  font-size: 15px;
-}
   .exit {
   font-size: 20px;
   background-color: black;
@@ -73,7 +68,7 @@
   color: green;
   z-index: 5;
   padding: 5px;
-  position: relative;
+  position: absolute;
   font-family: noto sans mono;
   text-align: center;
   animation-name: slidein;
@@ -84,18 +79,22 @@
     font-size: 22px;
     border: red solid;
   }
+
 @keyframes slidein {
   0% {opacity: 0%;}
   100% {opactiy: 100%;}
 }
 </style>
+<body>
+<button id="exit" class="exit" onclick="exit()">exit</button>
+<img id="move" class="move">↘</img>
+<div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay.</a></h2>
 <button class="btn1" id="btn1" onclick="btn1()">btn1</button>
 <button class="btn2" id="btn2" onclick="btn2()">btn2</button>
 <button class="btn3" id="btn3" onclick="btn3()">btn3</button>
 <button class="btn4" id="btn4" onclick="btn4()">btn4</button>
-<p class="output" id="output">Output</p>
 <script>
 main.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();};
@@ -126,16 +125,6 @@ alert("btn3");
 function btn4() {
 alert("btn4");
 };
-  
+document.getElementById("move").style.marginLeft = document.getElementById("main").style.marginLeft;
 </script> 
-</div>
-<img id="move" class="move" src="https://www.w3schools.com/css/img_forest.jpg"></img>
-<button id="exit" onclick="exit()" class="exit">exit</button>
-<script>
-var margin = document.getElementById("exit").style.margin;
-if(margin != document.getElementById("exit").style.margin;) {
-document.getElementById("exit").style.marginTop = document.getElementById("main").style.marginTop;
-document.getElementById("exit").style.marginRight = "";
-
-}
-</script>
+  </div>
