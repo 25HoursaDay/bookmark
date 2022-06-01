@@ -1,41 +1,39 @@
 
   <style>
  .mainb {
-  border: 7px green solid;
-  background-color: none;
+  background-color: green;
   width: 500px;
-  height: 400px;
+  height: 330px;
+  border: 8px green solid;
   border-radius: 50px;
   animation-name: slidein;
   animation-duration: 2s;
   position: absolute; 
-  padding: 10px;
-  overflow-y: scroll;
   z-index: 1;
   font-family: noto sans mono;
   user-select: none;
   cursor: move;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-    
-    
   .main {
-  border: 5px;
   background-color: black;
   width: 500px;
-  height: 400px;
-  border-radius: 40px;
+  height: 330px;
+  border-radius: 0px;
   animation-name: slidein;
   animation-duration: 2s;
   position: relative; 
-  padding: 10px;
-  overflow-y: scroll;
   z-index: 2;
   font-family: noto sans mono;
   text-align: center;
   align-items: center;
   user-select: none;
-  margin: -10px -10px;
-  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: auto;
+  cursor: pointer; 
+  overflow-x: hidden;
 }
     
 .title, .under {
@@ -90,6 +88,7 @@
 }
 </style>
 <body>
+<div id="total" class="total">
 <button id="exit" class="exit" onclick="exit()">exit</button>
 <div id="mainb" class="mainb">
 <div id="main" class="main">
@@ -110,9 +109,7 @@ else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("b
 else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("bru");}});
   
 function exit() {
-document.getElementById("main").innerHTML = "";
-document.getElementById("exit").innerHTML = "";
-document.getElementById("move").innerHTML = "";
+document.body.innerHTML = "";
 };
   
 function btn1() {
@@ -135,3 +132,8 @@ function btn4() {
 </script> 
   </div>
   </div>
+  </div>
+  <script>
+    
+  </script>
+</body>
