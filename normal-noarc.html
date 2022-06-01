@@ -1,4 +1,4 @@
-
+<body>
   <style>
  .mainb {
   background-color: green;
@@ -81,13 +81,19 @@
     color: red;
     border: red solid;
   }
+    
+    .total {
+     height: 100%;
+     width: 100%;
+     position: relative;
+    }
 
 @keyframes slidein {
   0% {opacity: 0%;}
   100% {opactiy: 100%;}
 }
 </style>
-<body>
+
 <div id="total" class="total">
 <button id="exit" class="exit" onclick="exit()">exit</button>
 <div id="mainb" class="mainb">
@@ -100,8 +106,8 @@
 <button class="btn4" id="btn4" onclick="btn4()">btn4</button>
 <script>
 document.oncontextmenu = rightclick;
-main.oncontextmenu = rightClick;
-function rightClick(clickEvent) {clickEvent.preventDefault();};
+document.body.oncontextmenu = rightClick;
+function rightClick(clickEvent) {clickEvent.preventDefault();}
   
 document.addEventListener('keydown', (e) => {
 if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("bru");} 
@@ -134,6 +140,38 @@ function btn4() {
   </div>
   </div>
   <script>
+    el = document.querySelector('.mainb');
+let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
+
+// when the user clicks down on the element
+el.addEventListener('mousedown', function(f){
+    f.preventDefault();
     
+    // get the starting position of the cursor
+    startPosX = f.clientX;
+    startPosY = f.clientY;
+    
+    document.addEventListener('mousemove', mouseMove);
+    
+    document.addEventListener('mouseup', function(){
+        document.removeEventListener('mousemove', mouseMove);
+    });
+    
+});
+
+
+function mouseMove(f) {
+    // calculate the new position
+    newPosX = startPosX - f.clientX;
+    newPosY = startPosY - f.clientY;
+
+    // with each move we also want to update the start X and Y
+    startPosX = f.clientX;
+    startPosY = f.clientY;
+
+    // set the element's new position:
+    el.style.top = (el.offsetTop - newPosY) + "px";
+    el.style.left = (el.offsetLeft - newPosX) + "px";
+}
   </script>
 </body>
