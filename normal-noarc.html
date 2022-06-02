@@ -171,8 +171,8 @@ function mouseMove(f) {
     // set the element's new position:
     el.style.top = (el.offsetTop - newPosY) + "px";
     el.style.left = (el.offsetLeft - newPosX) + "px";
-    document.getElementById("exit").style.top = (el.offsetTop - newPosY) + "px";
-    document.getElementById("exit").style.left = (el.offsetLeft - newPosX) + "px";
+    document.getElementById("exit").style.top = (el.offsetTop - newPosY + 5) + "px";
+    document.getElementById("exit").style.left = (el.offsetLeft - newPosX + 5) + "px";
 }
 
   </script>
