@@ -135,12 +135,15 @@ function btn4() {
   </div>
   </div>
   <script>
+    var up;
+    var down;
     el = document.querySelector('.mainb');
 let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
 
 // when the user clicks down on the element
 el.addEventListener('mousedown', function(f){
-
+     up = false;
+     down = true;
     f.preventDefault();
     
     // get the starting position of the cursor
@@ -148,8 +151,9 @@ el.addEventListener('mousedown', function(f){
     startPosY = f.clientY;
     
     document.addEventListener('mousemove', mouseMove);
-     
     document.addEventListener('mouseup', function(){
+      up = true; 
+      down = false;
         document.removeEventListener('mousemove', mouseMove);
     });
     
@@ -158,6 +162,7 @@ el.addEventListener('mousedown', function(f){
  
 function mouseMove(f) {
     // calculate the new position
+  if(down){
     newPosX = startPosX - f.clientX;
     newPosY = startPosY - f.clientY;
 
@@ -167,10 +172,10 @@ function mouseMove(f) {
 
     // set the element's new position:
     el.style.top = (el.offsetTop - newPosY) + "px";
-    el.style.left = (el.offsetLeft - newPosX) + "px";
     document.getElementById("exit").style.top = (el.offsetTop - newPosY + 5) + "px";
+    el.style.left = (el.offsetLeft - newPosX) + "px";
     document.getElementById("exit").style.left = (el.offsetLeft - newPosX + 5) + "px";
 }
-
+}
   </script>
 </body>
