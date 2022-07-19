@@ -42,6 +42,7 @@
   padding: 0px;
   z-index: 2;
   margin: auto;
+  font-family: noto sans mono;
 }
 .title a:hover, .under a:hover {
   color: red;
@@ -57,6 +58,7 @@
   position: relative;
   width: 450px;
   height: 40px;
+  font-family: noto sans mono;
 }
 .btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover {
   color: red;
@@ -134,48 +136,4 @@ function btn4() {
 </script>  
   </div>
   </div>
-  <script>
-    var up;
-    var down;
-    el = document.querySelector('.mainb');
-let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
-
-// when the user clicks down on the element
-el.addEventListener('mousedown', function(f){
-     up = false;
-     down = true;
-    f.preventDefault();
-    
-    // get the starting position of the cursor
-    startPosX = f.clientX;
-    startPosY = f.clientY;
-    
-    document.addEventListener('mousemove', mouseMove);
-    document.addEventListener('mouseup', function(){
-      up = true; 
-      down = false;
-        document.removeEventListener('mousemove', mouseMove);
-    });
-    
-});
-
- 
-function mouseMove(f) {
-    // calculate the new position
-  if(down){
-    newPosX = startPosX - f.clientX;
-    newPosY = startPosY - f.clientY;
-
-    // with each move we also want to update the start X and Y
-    startPosX = f.clientX;
-    startPosY = f.clientY;
-
-    // set the element's new position:
-    el.style.top = (el.offsetTop - newPosY) + "px";
-    document.getElementById("exit").style.top = (el.offsetTop - newPosY + 5) + "px";
-    el.style.left = (el.offsetLeft - newPosX) + "px";
-    document.getElementById("exit").style.left = (el.offsetLeft - newPosX + 5) + "px";
-}
-}
-  </script>
 </body>
