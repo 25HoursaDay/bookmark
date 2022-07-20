@@ -44,15 +44,6 @@
   border: red solid;
   font-size: 22px;
 }
-.output {
-  color: green;
-  font-size: 10px;
-
-}
-.output:onhover {
-  color: red;
-  font-size: 15px;
-}
   .exit {
     position: relative; 
     font-size: 20px;
@@ -78,19 +69,17 @@
 <script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
   </head>
 <button onclick="exit()" class="exit">exit</button>
-<img src="IMAGE"></img>
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay.</a></h2>
 <button class="btn1" id="btn1" onclick="btn1()">btn1</button>
 <button class="btn2" id="btn2" onclick="btn2()">btn2</button>
 <button class="btn3" id="btn3" onclick="btn3()">btn3</button>
 <button class="btn4" id="btn4" onclick="btn4()">btn4</button>
-<p class="output" id="output">Output</p>
 <script>
 document.getElementById("output").style.display = "none";
   
 main.oncontextmenu = rightClick;
-function rightClick(clickEvent) {clickEvent.preventDefault();};
+function rightClick(clickEvent) {clickEvent.preventDefault();};  
   
 document.addEventListener('keydown', (e) => {
 if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("bru");} 
