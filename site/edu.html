@@ -8,7 +8,7 @@
   border: 6px green solid;
   background-color: black;
   width: 99%;
-  height: 90%;
+  height: 98%;
   border-radius: 50px;
   animation-name: slidein;
   animation-duration: 2s;
@@ -52,7 +52,10 @@
     border: green solid;
     border-radius: 51122px;
     color: green;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     left: 1px;
     z-index: 5;
     animation-name: slidein;
@@ -88,18 +91,15 @@ if (window.location == "about:blank"){  } else {
   win2.confirm("Please use this service in about:blank. See -insert here- for more details.");
   location.replace("https://www.google.com/?safe=active&ssui=on");
   }
+	
  function unload() {
-  return "";
+  return "unload";
   }
   
-main.oncontextmenu = rightClick;
+window.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();};  
   
-document.addEventListener('keydown', (e) => {
-if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("bru");} 
-else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("bru");} 
-else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("bru");}});
-  
+
 function exit() {
   location.replace("https://www.google.com/?safe=active&ssui=on");
 }
