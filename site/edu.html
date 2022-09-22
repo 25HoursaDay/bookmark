@@ -78,6 +78,12 @@
 <button class="btn3" id="btn3" onclick="btn3()">btn3</button>
 <button class="btn4" id="btn4" onclick="btn4()">btn4</button>
 <script>
+if (window.location == "about:blank"){  } else {
+  let win2 = window.open();
+  win2.alert("Please use this service in about:blank.");
+  location.replace("https://www.google.com/?safe=active&ssui=on");
+  }
+  
 document.getElementById("output").style.display = "none";
   
 main.oncontextmenu = rightClick;
