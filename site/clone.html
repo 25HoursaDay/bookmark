@@ -1,0 +1,126 @@
+
+  <style>
+  body {
+  font-family: noto sans mono;
+  text-align: center;
+ }
+  .main {
+  border: 6px green solid;
+  background-color: black;
+  width: 99%;
+  height: 95%;
+  border-radius: 50px;
+  animation-name: slidein;
+  animation-duration: 2s;
+  position: sticky; 
+  padding-bottom: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+.title, .under {
+  color: green;
+  padding: 0px;
+  font-family: noto sans mono;
+}
+
+.title a:hover, .under a:hover {
+  color: red;
+}
+.btn1, .btn2, .btn3, .btn4 {
+  color: green;
+  background-color: #000000;
+  font-size: 20px;
+  border-radius: 51122px;
+  border: green solid;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  width: 450px;
+  height: 40px;
+ 
+}
+.btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover {
+  color: red;
+  border: red solid;
+  font-size: 22px;
+}
+  .exit {
+    position: absolute; 
+    font-size: 20px;
+    background-color: black;
+    border: green solid;
+    border-radius: 51122px;
+    color: green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 1px;
+    z-index: 5;
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+  .exit:hover {
+    color: red;
+    font-size: 22px;
+    border: red solid;
+  }
+@keyframes slidein {
+  0% {opacity: 0%;}
+  100% {opactiy: 100%;}
+}
+</style>
+  <head>
+<script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
+  </head>
+<button onclick="exit()" class="exit">exit</button>
+<div id="main" class="main" onbeforeunload="return unload()">
+<h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
+<h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
+<button class="btn1" id="btn1" onclick="btn1()">btn1</button>
+	<br>
+<button class="btn2" id="btn2" onclick="btn2()">btn2</button>
+	<br>
+<button class="btn3" id="btn3" onclick="btn3()">btn3</button>
+	<br>
+<button class="btn4" id="btn4" onclick="btn4()">btn4</button>
+	<br>
+<script>
+ function unload() {
+  return "unload";
+  }
+  
+window.oncontextmenu = rightClick;
+function rightClick(clickEvent) {clickEvent.preventDefault();};  
+  
+
+function exit() {
+  location.replace("https://www.google.com/?safe=active&ssui=on");
+}
+  
+function btn1() {
+alert("btn1");
+}
+  
+function btn2() {
+alert("btn2");
+}
+  
+function btn3() {
+alert("btn3");
+}
+  
+function btn4() {
+alert("btn4");
+}
+  
+   function open(url) {
+  let win = window.open();
+  win.document.write('<div style=margin-left:auto;margin-right:auto;text-align:center><iframe src='+url+' width=100% height=100% style=border:none></iframe></div>');
+  win.append('<script> if (window.location == "about:blank"){ win.focus(); } else { win.location.replace("https://www.google.com/?safe=active&ssui=on");} </script>');
+  }
+</script> 
+</div>
+
+
