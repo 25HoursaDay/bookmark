@@ -87,12 +87,13 @@
 <button class="btn4" id="btn4" onclick="btn4()">btn4</button>
 	<br>
 <script>
+function() {
 if (window.location == "about:blank"){  } else {
   let win2 = window.open();
   win2.confirm("Please use this service in about:blank. See -insert here- for more details.");
   location.replace("https://www.google.com/?safe=active&ssui=on");
   }
-	
+}
   
 window.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();};  
