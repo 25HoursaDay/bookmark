@@ -75,7 +75,7 @@
 <script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
   </head>
 <button onclick="exit()" class="exit">exit</button>
-<div id="main" class="main" onbeforeunload="return unload()">
+<div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
 <button class="btn1" id="btn1" onclick="btn1()">btn1</button>
@@ -93,9 +93,6 @@ if (window.location == "about:blank"){  } else {
   location.replace("https://www.google.com/?safe=active&ssui=on");
   }
 	
- function unload() {
-  return "unload";
-  }
   
 window.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();};  
