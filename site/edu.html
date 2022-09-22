@@ -7,7 +7,7 @@
   .main {
   border: 6px green solid;
   background-color: black;
-  width: 500px;
+  width: 100%;
   height: auto;
   border-radius: 50px;
   animation-name: slidein;
@@ -53,7 +53,7 @@
     border-radius: 51122px;
     color: green;
     padding: 5px;
-    margin: -19px 94%;
+    margin: 1px;
 
   }
   .exit:hover {
@@ -69,7 +69,7 @@
   <head>
 <script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
   </head>
-<div id="main" class="main">
+<div id="main" class="main" onbeforeunload="return unload()">
 <button onclick="exit()" class="exit">exit</button>
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
@@ -80,11 +80,12 @@
 <script>
 if (window.location == "about:blank"){  } else {
   let win2 = window.open();
-  win2.alert("Please use this service in about:blank.");
+  win2.confirm("Please use this service in about:blank. See -insert here- for more details.");
   location.replace("https://www.google.com/?safe=active&ssui=on");
   }
-  
-document.getElementById("output").style.display = "none";
+ function unload() {
+  return "";
+  }
   
 main.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();};  
@@ -95,7 +96,7 @@ else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("b
 else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("bru");}});
   
 function exit() {
-document.getElementById("main").innerHTML = "";
+  location.replace("https://www.google.com/?safe=active&ssui=on");
 }
   
 function btn1() {
