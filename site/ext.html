@@ -1,0 +1,112 @@
+
+  <style>
+  body {
+  font-family: noto sans mono;
+  text-align: center;
+ }
+  .main {
+  border: 6px green solid;
+  background-color: black;
+  width: 99%;
+  height: 95%;
+  border-radius: 50px;
+  animation-name: slidein;
+  animation-duration: 2s;
+  position: sticky; 
+  padding-bottom: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+.title, .under {
+  color: green;
+  padding: 0px;
+  font-family: noto sans mono;
+}
+
+.title a:hover, .under a:hover {
+  color: red;
+}
+.btn1 {
+  color: green;
+  background-color: #000000;
+  font-size: 20px;
+  border-radius: 51122px;
+  border: green solid;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  width: 450px;
+  height: 40px;
+ 
+}
+.btn1:hover {
+  color: red;
+  border: red solid;
+  font-size: 22px;
+}
+  .exit {
+    position: absolute; 
+    font-size: 20px;
+    background-color: black;
+    border: green solid;
+    border-radius: 51122px;
+    color: green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 1px;
+    z-index: 5;
+    animation-name: slidein;
+    animation-duration: 2s;
+  }
+  .exit:hover {
+    color: red;
+    font-size: 22px;
+    border: red solid;
+  }
+@keyframes slidein {
+  0% {opacity: 0%;}
+  100% {opactiy: 100%;}
+}
+</style>
+  <head>
+<script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
+  </head>
+<button onclick="exit()" class="exit">exit</button>
+<div id="main" class="main">
+<h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
+<h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">Remove Extension Bookmarklet</a></h2>
+<button class="btn1" id="btn1" href="javascript:(function()%7Bif%20(location.host%20!%3D%20%22chrome.google.com%22%20%7C%7C%20!location.pathname.startsWith(%22%2Fwebstore%22))%20%7Blocation.href%20%3D%20%22https%3A%2F%2Fchrome.google.com%2Fwebstorex%22%3B%7Ddocument.head.innerHTML%20%3D%20%60%3Cstyle%3Etr%3Anth-child(even)%7Bbackground-color%3A%20%23f2f2f2%3B%7Dtr%3Ahover%20%7Bbackground-color%3A%20%23ddd%3B%7Dtd%2C%20th%20%7Bborder%3A%201px%20solid%20%23ddd%3Bpadding%3A%208px%3Bfont-family%3A%20Arial%2C%20Helvetica%2C%20sans-serif%3Bborder-collapse%3A%20collapse%3B%7D.switch%20%7Bposition%3A%20relative%3Bdisplay%3A%20inline-block%3Bwidth%3A%2040px%3Bheight%3A%2023px%3B%7D.switch%20input%20%7Bopacity%3A%200%3Bwidth%3A%200%3Bheight%3A%200%3B%7D.slider%20%7Bposition%3A%20absolute%3Bcursor%3A%20pointer%3Btop%3A%200%3Bleft%3A%200%3Bright%3A%200%3Bbottom%3A%200%3Bbackground-color%3A%20%23ccc%3B-webkit-transition%3A%20.4s%3Btransition%3A%20.4s%3B%7D.slider%3Abefore%20%7Bposition%3A%20absolute%3Bcontent%3A%20%22%22%3Bheight%3A%2017px%3Bwidth%3A%2017px%3Bleft%3A%203px%3Bbottom%3A%203px%3Bbackground-color%3A%20white%3B-webkit-transition%3A%20.4s%3Btransition%3A%20.4s%3B%7Dinput%3Achecked%20%2B%20.slider%20%7Bbackground-color%3A%20%232196F3%3B%7Dinput%3Afocus%20%2B%20.slider%20%7Bbox-shadow%3A%200%200%201px%20%232196F3%3B%7Dinput%3Achecked%20%2B%20.slider%3Abefore%20%7B-webkit-transform%3A%20translateX(17px)%3B-ms-transform%3A%20translateX(17px)%3Btransform%3A%20translateX(17px)%3B%7D%2F*%20Rounded%20sliders%20*%2F.slider.round%20%7Bborder-radius%3A%2023px%3B%7D.slider.round%3Abefore%20%7Bborder-radius%3A%2050%25%3B%7D%3C%2Fstyle%3E%60%3Bdocument.body%20%3D%20document.createElement(%22body%22)%3Bdocument.toggleFunction%20%3D%20function(id)%7Bvar%20clickedRow%20%3D%20document.getElementById(id)%3Bchrome.management.setEnabled(id%2C%20clickedRow.children%5B0%5D.children%5B0%5D.children%5B0%5D.checked)%3B%7D%3Bdocument.newBodyData%20%3D%20%22%3Ctable%3E%22console.log(document.newBodyData)document.newBodyData%20%2B%3D%20%22%22chrome.management.getAll(function()%7Barguments%5B0%5D.forEach(function(extension)%7Bdocument.newBodyData%20%2B%3D%20%22%3Ctr%20id%3D%22%2Bextension.id%2B%22%3E%22%2F*if%20(%22icons%22%20in%20extension)%20%7Bdocument.newBodyData%20%2B%3D%20%22%3Ctd%3E%3Cimg%20src%3D'%22%2Bextension.icons%5B0%5D%5B'url'%5D%2B%22'%2F%3E%3C%2Ftd%3E%22%7D*%2Fdocument.newBodyData%20%2B%3D%20%22%3Ctd%3E%3Clabel%20class%3D'switch'%3E%3Cinput%20type%3D'checkbox'%20%22%20%2B%20(extension.enabled%20%3F%20%22checked%22%20%3A%20%22%22)%20%2B%20%22%20onclick%3D%5C%22toggleFunction('%22%2Bextension.id%2B%22')%5C%22%3E%3Cspan%20class%3D'slider%20round'%3E%3C%2Fspan%3E%3C%2Flabel%3E%3C%2Ftd%3E%22document.newBodyData%20%2B%3D%20%22%3Ctd%3E%22%2Bextension.name%2B%22%3C%2Ftd%3E%22document.newBodyData%20%2B%3D%20%22%3Ctd%3E%22%2Bextension.id%2B%22%3C%2Ftd%3E%22document.newBodyData%20%2B%3D%20%22%3Ctd%3E%22%2Bextension.installType%2B%22%3C%2Ftd%3E%22document.newBodyData%20%2B%3D%20%22%3C%2Ftr%3E%22%7D)%3Bdocument.newBodyData%20%2B%3D%20%22%3C%2Ftable%3E%22document.body.innerHTML%20%3D%20document.newBodyData%3B%7D)%7D)()">Drag me into your bookmarks bar</button>
+	<br>
+<script>
+
+
+
+  
+document.oncontextmenu = rightClick;
+function rightClick(clickEvent) {clickEvent.preventDefault();};  
+  
+
+
+function exit() {
+  location.replace("https://www.google.com/?safe=active&ssui=on");
+}
+  
+	
+document.addEventListener('keydown', (e) => {
+if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
+else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
+else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
+	
+  function open(url) {
+  let win = window.open();
+  win.document.write('<div style=margin-left:auto;margin-right:auto;text-align:center><iframe src='+url+' width=100% height=100% style=border:none></iframe></div>');
+  win.append('<script> if (window.location == "about:blank"){ win.focus(); } else { win.location.replace("https://www.google.com/?safe=active&ssui=on");} <'+'/script'+'>');
+  }
+	
+</script> 
+</div>
+
+
