@@ -45,27 +45,7 @@
   border: red solid;
   font-size: 22px;
 }
-  .exit {
-    position: absolute; 
-    font-size: 20px;
-    background-color: black;
-    border: green solid;
-    border-radius: 51122px;
-    color: green;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    left: 1px;
-    z-index: 5;
-    animation-name: slidein;
-    animation-duration: 2s;
-  }
-  .exit:hover {
-    color: red;
-    font-size: 22px;
-    border: red solid;
-  }
+
 @keyframes slidein {
   0% {opacity: 0%;}
   100% {opactiy: 100%;}
@@ -74,7 +54,6 @@
   <head>
 <script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
   </head>
-<button onclick="exit()" class="exit">exit</button>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">Remove Extension Bookmarklet</a></h2>
@@ -86,13 +65,7 @@
 
   
 document.oncontextmenu = rightClick;
-function rightClick(clickEvent) {clickEvent.preventDefault();};  
-  
-
-
-function exit() {
-  location.replace("https://www.google.com/?safe=active&ssui=on");
-}
+function rightClick(clickEvent) {clickEvent.preventDefault();}  
   
 	
 document.addEventListener('keydown', (e) => {
