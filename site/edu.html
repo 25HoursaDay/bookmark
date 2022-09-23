@@ -158,8 +158,8 @@ else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("e
   }
 	
 function loaded() {
-if (window.location == "about:blank"){  
-	} else {
+if (window.location == "about:blank"){var unused = "unused";} 
+	else {
   window.confirm("Please use this service in about:blank. See -insert here- for more details.");
   location.replace("https://www.google.com/?safe=active&ssui=on");
 	}
