@@ -75,6 +75,14 @@
 <script async src="https://arc.io/widget.min.js#nnUFwP4e"></script>
   </head>
 <button onclick="exit()" class="exit">exit</button>
+<script>
+  function exit() {
+  document.style.innerHTML = "";
+  document.head.innerHTML = "";
+  document.main.innerHTML = "";
+  document.exit.innerHTML = "";
+}
+</script>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
@@ -106,9 +114,7 @@ function rightClick(clickEvent) {clickEvent.preventDefault();};
   
 
 
-function exit() {
-  location.replace("https://www.google.com/?safe=active&ssui=on");
-}
+
   
 function btn1() {
 alert("btn1");
