@@ -40,7 +40,7 @@
   height: 40px;
  
 }
-.btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover {
+.btn1:hover,.btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover, .btn9:hover {
   color: red;
   border: red solid;
   font-size: 22px;
@@ -99,8 +99,7 @@
 <script>
 
 if (window.location == "about:blank"){ alert("success"); } else {
-  let win2 = window.open();
-  win2.confirm("Please use this service in about:blank. See -insert here- for more details.");
+  window.confirm("Please use this service in about:blank. See -insert here- for more details.");
   location.replace("https://www.google.com/?safe=active&ssui=on");
   }
 
