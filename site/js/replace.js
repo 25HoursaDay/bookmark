@@ -1,1 +1,1 @@
-window.location.replace('https%3A%2F%2Fgoogle.com');
+window.location.replace("https://www.google.com/?safe=active&ssui=on");
