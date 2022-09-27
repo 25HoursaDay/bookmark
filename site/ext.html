@@ -61,29 +61,24 @@
 	<a class="btn1" id="btn1" href=`javascript:fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/js/ltbeef.js").then(data=>{data.text().then(text=>{eval(text)})});`>Disable/Enable Extensions</a>
 	<br>
 	<br>
-	<a class="btn2" id="btn2" href=`javascript:(function()%7Bwindow.location.replace('https%3A%2F%2Fgoogle.com')%7D)()`>Remove current page from history</a>
+	<a class="btn2" id="btn2" href=`javascript:fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/js/replace.js").then(data=>{data.text().then(text=>{eval(text)})});`>Remove current page from history</a>
 	<br>
 	<br>
-	<a class="btn3" id="btn3" href=`javascript:(function()%7Bvar lower %3D 1000000%3Bvar upper %3D 9999999%3Bwindow.open('https%3A%2F%2Fpatft.uspto.gov%2Fnetacgi%2Fnph-Parser%3FTERM1%3D'%2B (Math.floor(Math.random()*(upper-lower))%2Blower) %2B'%26Sect1%3DPTO1%26Sect2%3DHITOFF%26d%3DPALL%26p%3D1%26u%3D%252Fnetahtml%252FPTO%252Fsrchnum.htm%26r%3D0%26f%3DS%26l%3D50')%7D)()`>View random patent</a>
+	<a class="btn3" id="btn3" href=`javascript:fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/js/patent.js").then(data=>{data.text().then(text=>{eval(text)})});`>View random patent</a>
 	<br>
 	<br>
-	<a class="btn4" id="btn4" href=`javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();`>Budget inspect element</a>
+	<a class="btn4" id="btn4" href=`javascript:fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/js/inspect.js").then(data=>{data.text().then(text=>{eval(text)})});`>Budget inspect element</a>
 	<br>
 	<br>
 <script>
 	
-
-
-  
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
-  
-	
+ 
 document.addEventListener('keydown', (e) => {
 if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
 else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
 else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
-	
 </script> 
 </div>
 
