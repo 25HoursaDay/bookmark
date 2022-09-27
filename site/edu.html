@@ -14,6 +14,7 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 @keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
 	  
 </style>
+<title>Hecker.bat Home</title>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
@@ -40,7 +41,7 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 <script>
 function btn1() {
 let win = window.open();
-fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/ext.html")
+fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/bookmarklets.html")
 .then((result) => { return result.text(); })
 .then((content) => { win.document.write(content); });
 }
