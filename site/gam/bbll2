@@ -9,7 +9,7 @@ body {font-family:noto sans mono; text-align:center; background-color:black;}
 <title>Burrito Bison Launcha Libre Server 2</title>
 <div class="gam"></div>
 <script>
-fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/edu.html")
+fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/bbll2-file")
 .then((result) => { return result.text(); })
 .then((content) => { document.getElementsByClassName("gam").write(content); });
 
