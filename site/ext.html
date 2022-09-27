@@ -1,83 +1,42 @@
-  <style>
-  body {
-  font-family: noto sans mono;
-  text-align: center;
-  background-color: black;
- }
-  .main {
-  border: 6px green solid;
-  background-color: black;
-  width: 99%;
-  height: 95%;
-  border-radius: 50px;
-  animation-name: slidein;
-  animation-duration: 2s;
-  position: sticky; 
-  padding-bottom: 10px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.title, .under {
-  color: green;
-  padding: 0px;
-  font-family: noto sans mono;
-}
-.title a:hover, .under a:hover {
-  color: red;
-}
-.btn {
-  color: green;
-  background-color: #000000;
-  font-size: 20px;
-  border-radius: 51122px;
-  border: green solid;
-  margin: auto;
-  margin-top: 10px;
-  position: relative;
-  width: 450px;
-  height: 40px;
-}
-.btn *{
-color: green;
-font-size: 20px;
-}
-.btn:hover {
-  color: red;
-  cursor: pointer;
-  border: red solid;
-  font-size: 22px;
-}
-.btn:hover *{
-  color: red;
-  cursor: pointer;
-  font-size: 22px;
-}
-@keyframes slidein {
-  0% {opacity: 0%;}
-  100% {opactiy: 100%;}
-}
+<style>
+body {font-family: noto sans mono;text-align: center;background-color: black;}
+	  
+.main {border: 6px green solid;background-color: black;width: 99%;height: 95%;border-radius: 50px;animation-name: slidein;animation-duration: 2s;position: sticky; padding-bottom: 10px;overflow-x: hidden;overflow-y: scroll;}
+	  
+.title, .under {color: green;padding: 0px;font-family: noto sans mono;}
+	  
+.title a:hover, .under a:hover {color: red;}
+	  
+.btn {color: green;background-color: #000000;font-size: 20px;border-radius: 51122px;border: green solid;margin: auto;margin-top: 10px;position: relative;width: 450px;height: 40px;}
+	  
+.btn *{color: green;font-size: 20px;}
+	  
+.btn:hover {color: red;cursor: pointer;border: red solid;font-size: 22px;}
+	  
+.btn:hover *{color: red;cursor: pointer;font-size: 22px;}
+	  
+@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+	  
 </style>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">Bookmarklets</a></h2>
 	
-	<button class="btn" id="btn1"><a href="javascript:(function()%7Bfetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Fltbeef.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">Disable/Enable extensions</a></button>
-	<br>
-	<button class="btn" id="btn2"><a href="javascript:(function()%7Bfetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Freplace.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">Remove current page from history</a></button>
-	<br>
-	<button class="btn" id="btn3"><a href="javascript:(function()%7Bjavascript%3Afetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Fpatent.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">View random patent</a></button>
-	<br>
-	<button class="btn" id="btn4"><a href="javascript:(function()%7Bfetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Finspect.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">Budget inspect element</a></button>
-	<br>
-<script>
+<button class="btn" id="btn1"><a href="javascript:(function()%7Bfetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Fltbeef.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">Disable/Enable extensions</a></button>
+<br>
+<button class="btn" id="btn2"><a href="javascript:(function()%7Bfetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Freplace.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">Remove current page from history</a></button>
+<br>
+<button class="btn" id="btn3"><a href="javascript:(function()%7Bjavascript%3Afetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Fpatent.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">View random patent</a></button>
+<br>
+<button class="btn" id="btn4"><a href="javascript:(function()%7Bfetch(%22https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fjs%2Finspect.js%22).then(data%3D%3E%7Bdata.text().then(text%3D%3E%7Beval(text)%7D)%7D)%7D)()">Budget inspect element</a></button>
+<br>
 	
+<script>
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
- 
 document.addEventListener('keydown', (e) => {
 if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
 else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
 else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
 </script> 
 </div>
-
