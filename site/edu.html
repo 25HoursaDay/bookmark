@@ -54,7 +54,7 @@
 	
 <button class="btn" id="btn1" onclick="btn1()">Bookmarklets</button>
 	<br>
-<button class="btn" id="btn2" onclick="btn2()">btn2</button>
+<button class="btn" id="btn2" onclick="btn2()">Games</button>
 	<br>
 <button class="btn" id="btn3" onclick="btn3()">btn3</button>
 	<br>
@@ -83,7 +83,10 @@ function btn1() {
 }
   
 function btn2() {
-alert("btn2");
+  let win = window.open();
+  fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam.html")
+  .then((result) => { return result.text(); })
+  .then((content) => { win.document.write(content); });
 }
   
 function btn3() {
