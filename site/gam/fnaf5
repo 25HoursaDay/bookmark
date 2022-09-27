@@ -7,7 +7,7 @@ body {font-family:noto sans mono; text-align:center; background-color:black;}
   
 </style>
 <title>FNaF 5 (Sister Location)</title>
-<iframe class="gam" src=""></iframe>
+<iframe class="gam" src="https://web.archive.org/web/20220529232602/https://run3.io/popgame/fnaf/fnafsl.html"></iframe>
 <script>
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
