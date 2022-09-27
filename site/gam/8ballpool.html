@@ -1,0 +1,18 @@
+<style>
+body {font-family:noto sans mono; text-align:center; background-color:black;}
+    
+.gam {height:98%; width:98%; margin:auto; border:6px green solid; border-radius:5px; animation-name:slidein; animation-duration:2s; position:sticky; background-color:black; overflow-x:hidden; overflow-y:hidden;}
+    
+@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+  
+</style>
+<title>2048</title>
+<iframe class="gam" id="gam" src="https://ams.cdn.arkadiumhosted.com/assets/global/game/pool-pixijs/?arena_name=Arkadium.com+Games&device_type=pc&events=game_start,game_end,pause_ready,event_change,abtest_init&game_name=Free+8+Ball+Pool+Game&locale=en-US&play_id=LTUyNzg%3D&play_id=LTUyNzg%3D?show_game_end%3Dfalse&show_game_end=false"></iframe>
+<script>
+document.oncontextmenu = rightClick;
+function rightClick(clickEvent) {clickEvent.preventDefault();}  
+document.addEventListener('keydown', (e) => {
+if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
+else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
+else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
+</script> 
