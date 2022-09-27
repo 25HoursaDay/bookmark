@@ -1,68 +1,39 @@
   <style>
-  body {
-  font-family: noto sans mono;
-  text-align: center;
-  background-color: black;
- }
-  .main {
-  border: 6px green solid;
-  background-color: black;
-  width: 99%;
-  height: 95%;
-  border-radius: 50px;
-  animation-name: slidein;
-  animation-duration: 2s;
-  position: sticky; 
-  padding-bottom: 10px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.title, .under {
-  color: green;
-  padding: 0px;
-  font-family: noto sans mono;
-}
-.title a:hover, .under a:hover {
-  color: red;
-}
-.btn {
-  color: green;
-  background-color: #000000;
-  font-size: 20px;
-  border-radius: 51122px;
-  border: green solid;
-  margin: auto;
-  margin-top: 10px;
-  position: relative;
-  width: 450px;
-  height: 40px;
-}
-.btn:hover {
-  color: red;
-  cursor: pointer;
-  border: red solid;
-  font-size: 22px;
-}
-@keyframes slidein {
-  0% {opacity: 0%;}
-  100% {opactiy: 100%;}
-}
+body {font-family: noto sans mono;text-align: center;background-color: black;}
+	  
+.main {border: 6px green solid;background-color: black;width: 99%;height: 95%;border-radius: 50px;animation-name: slidein;animation-duration: 2s;position: sticky; padding-bottom: 10px;overflow-x: hidden;overflow-y: scroll;}
+	  
+.title, .under {color: green;padding: 0px;font-family: noto sans mono;}
+	  
+.title a:hover, .under a:hover {color: red;}
+	  
+.btn {color: green;background-color: #000000;font-size: 20px;border-radius: 51122px;border: green solid;margin: auto;margin-top: 10px;position: relative;width: 450px;height: 40px;}
+	  
+.btn:hover {color: red;cursor: pointer;border: red solid;font-size: 22px;}
+	  
+@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+	  
 </style>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
 <h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">Games</a></h2>
 	
-	<button class="btn" id="btn1" onclick=""></button>
-	<br>
+<button class="btn" id="btn1" onclick=""></button>
+<br>
+	
 <script>
+function btn1() {
+  let win = window.open();
+  fetch("")
+  .then((result) => { return result.text(); })
+  .then((content) => { win.document.write(content); });
+}
 	
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
- 
 document.addEventListener('keydown', (e) => {
 if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
 else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
 else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
 </script> 
 </div>
-
