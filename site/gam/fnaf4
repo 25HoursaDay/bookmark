@@ -7,7 +7,7 @@ body {font-family:noto sans mono; text-align:center; background-color:black;}
   
 </style>
 <title>FNaF 4</title>
-<iframe class="gam" src=""></iframe>
+<iframe class="gam" src="https://web.archive.org/web/20220927234235/https://run3.io/popgame/fnaf/fnaf4.html"></iframe>
 <script>
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
