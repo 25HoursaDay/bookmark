@@ -83,7 +83,7 @@ function btn1() {
   let win = window.open();
   fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/ext.html")
   .then((result) => { return result.text(); })
-  .then((content) => { win.document.innerHTML = content; });
+  .then((content) => { win.document.write = content; });
 }
   
 function btn2() {
