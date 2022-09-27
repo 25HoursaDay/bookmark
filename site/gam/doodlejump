@@ -7,7 +7,7 @@ body {font-family:noto sans mono; text-align:center; background-color:black;}
   
 </style>
 <title>Doodle Jump</title>
-<iframe class="gam" src="https://web.archive.org/web/20190501033257id_/https://cdn.wanted5games.com/games/doodle-jump-new-en-s-iga-cloud/index.html?pub=158"></iframe>
+<iframe class="gam" src="https://web.archive.org/web/20220927232836/https://cdn.wanted5games.com/games/doodle-jump-new-en-s-iga-cloud/index.html"></iframe>
 <script>
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
