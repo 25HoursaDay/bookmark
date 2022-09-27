@@ -1,15 +1,17 @@
-  <style>
-  body {font-family: noto sans mono;text-align: center;background-color: black;}
+<style>
+body {font-family: noto sans mono;text-align: center;background-color: black;}
     
-  .main {border: 6px green solid;background-color: black;width: 99%;height: 95%;border-radius: 50px;animation-name: slidein;animation-duration: 2s;position: sticky; padding-bottom: 10px;overflow-x: hidden;overflow-y: hidden;} 
+.main {border: 6px green solid;background-color: black;width: 99%;height: 95%;border-radius: 10px;animation-name: slidein;animation-duration: 2s;position: sticky;overflow-x: hidden;overflow-y: hidden;} 
     
-  .gam {height: 100%;width: 100%;position: relative;margin: auto;}
+.gam {height: 100%;width: 100%;position: relative;margin: auto;}
     
-  @keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+  
 </style>
 <div id="main" class="main">
 <iframe class="gam" id="gam" src="https://www.hoodamath.com/mobile/games/2048/game.html?nocheckorient=1"></iframe>
 <script>
+
 document.oncontextmenu = rightClick;
 function rightClick(clickEvent) {clickEvent.preventDefault();}  
 document.addEventListener('keydown', (e) => {
