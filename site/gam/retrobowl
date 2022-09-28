@@ -1,0 +1,18 @@
+<style>
+body {font-family:noto sans mono; text-align:center; background-color:black;}
+    
+.gam {height:98%; width:98%; margin:auto; border:6px green solid; border-radius:5px; animation-name:slidein; animation-duration:2s; position:sticky; background-color:black; overflow-x:hidden; overflow-y:hidden;}
+    
+@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+  
+</style>
+<title>Retro Bowl</title>
+<iframe class="gam" src=""></iframe>
+<script>
+document.oncontextmenu = rightClick;
+function rightClick(clickEvent) {clickEvent.preventDefault();}  
+document.addEventListener('keydown', (e) => {
+if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
+else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
+else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
+</script> 
