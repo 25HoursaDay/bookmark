@@ -2,5 +2,5 @@
 let win = window.open('https://chrome.google.com/webstorex');
   fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/edu.html")
   .then((result) => { return result.text(); })
-  .then((content) => { win.document.write(content); });
+  .then((content) => { win.document.innerHTML = content; });
 </script>
