@@ -1,0 +1,7 @@
+<script>
+  const win001 = window.open("https://chrome.google.com/webstorex");
+  const test = win001.document.createElement("div");
+  fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/")
+  .then((result) => { return result.text(); })
+  .then((content) => {win001.document.test.innerHTML = content; });
+</script>
