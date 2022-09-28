@@ -4,4 +4,6 @@ let win = window.open('https://chrome.google.com/webstorex');
   .then((result) => { return result.text(); })
   .then((content) => { let cons = content; });
   win.document.innerHTML = cons;
+  const myTimeout = setTimeout(akka, 5000);
+  function akka() {win.document.innerHTML = cons;}
 </script>
