@@ -1,9 +1,6 @@
 <script>
-let win = window.open('https://chrome.google.com/webstorex');
-  fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/edu.html")
+let win01 = window.open();
+  fetch("https%3A%2F%2Fraw.githubusercontent.com%2F25HoursaDay%2Fbookmark%2Fmain%2Fsite%2Fedu.html")
   .then((result) => { return result.text(); })
-  .then((content) => { let cons = content; });
-  win.document.innerHTML = cons;
-  const myTimeout = setTimeout(akka, 5000);
-  function akka() {win.document.innerHTML = cons;}
+  .then((content) => { win01.document.writein(content); });
 </script>
