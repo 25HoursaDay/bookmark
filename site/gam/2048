@@ -3,7 +3,5 @@
 .gam {height:100%; width:100%; top:0; left:0; border:none; overflow-x:hidden; overflow-y:hidden; position:absolute;}
 </style>
 <title>Google</title>
-</head>
-<body>
 <iframe class="gam" src="https://www.hoodamath.com/mobile/games/2048/game.html?nocheckorient=1"></iframe>
-</body>
+</head>
