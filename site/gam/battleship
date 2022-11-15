@@ -1,18 +1,7 @@
+<head>
 <style>
-body {font-family:noto sans mono; text-align:center; background-color:black;}
-    
-.gam {height:98%; width:98%; margin:auto; border:6px green solid; border-radius:5px; animation-name:slidein; animation-duration:2s; position:sticky; background-color:black; overflow-x:hidden; overflow-y:hidden;}
-    
-@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
-  
+.gam {height:100%; width:100%; top:0; left:0; border:none; overflow-x:hidden; overflow-y:hidden; position:absolute;}
 </style>
-<title>Battleship</title>
+<title>Google</title>
 <iframe class="gam" src="https://www.hoodamath.com/mobile/games/battleship/game.html?nocheckorient=1"></iframe>
-<script>
-document.oncontextmenu = rightClick;
-function rightClick(clickEvent) {clickEvent.preventDefault();}  
-document.addEventListener('keydown', (e) => {
-if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
-else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
-else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});	
-</script> 
+</head>
