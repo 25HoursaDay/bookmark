@@ -1,13 +1,15 @@
 <style>
-body {font-family: noto sans mono;text-align: center;background-color: black;}
+body {font-family: noto sans mono;text-align: center;}
 	  
-.main {border: 6px green solid;background-color: black;width: 99%;height: 95%;border-radius: 50px;animation-name: slidein;animation-duration: 2s;position: sticky; padding-bottom: 10px;overflow-x: hidden;overflow-y: scroll;}
+.main {border: 4px green solid;background-color: black;width: 40%;height: 50%;border-radius: 50px;animation-name: slidein;animation-duration: 2s;position: absolute; padding-bottom: 10px;overflow-x: hidden;overflow-y: scroll;font-family: noto sans mono;}
 	  
-.title, .under {color: green;padding: 0px;font-family: noto sans mono;}
+.title {color: green;margin-top: 5px;position:relative;}
 	  
-.title a:hover, .under a:hover {color: red;}
-	  
-.btn {color: green;background-color: #000000;font-size: 20px;border-radius: 51122px;border: green solid;margin: auto;margin-top: 10px;position: relative;width: 450px;height: 40px;}
+.title a:hover {color: red;}
+  
+.btnDiv {margin:auto; overflow-x: hidden;overflow-y: scroll;position:relative; height:100%; border-radius: 50px;border:4px solid green;width:80%;}
+  
+.btn {color: green; background-color: #000000;font-size: 20px;border: green solid;border-radius: 51122px;margin-top: 5px;position:relative;width: 90%;height: 40px;}
 	  
 .btn:hover {cursor: pointer;color: red;border: red solid;font-size: 22px;}
 	  
@@ -17,8 +19,7 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 <title>Hecker.bat Home</title>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
-<h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
-	
+  <div class="btnDiv">
 <button class="btn" onclick='btn("")'>Bookmarklets</button>
 <br>
 <button class="btn" onclick='btn("")'>Games</button>
@@ -37,6 +38,7 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 <br>
 <button class="btn" onclick='btn("")'>btn9</button>
 <br>
+  </div>
 	
 <script src="https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/index.js"></script> 
 </div>
