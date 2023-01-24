@@ -1,1 +1,25 @@
-
+.main {border:4px green solid; margin:auto;
+  background-color: black;
+  width: 40%;height: 50vh;
+  border-radius: 50px;
+  animation-name: slidein;
+  animation-duration: 2s;
+  position: relative;
+  padding-bottom: 10px;
+  overflow-x: hidden;overflow-y: scroll;
+  font-family: noto sans mono;
+  text-align: center;}
+	  
+.title {color: green;margin-top: 20px;position:relative;}
+	  
+.title a:hover {color: red;}
+  
+.btnDiv {margin:auto;overflow-x: hidden;overflow-y: scroll;position:relative; height:inherit; border-radius: 50px;border:4px solid green;width:80%;
+  max-height: calc(100% - 90px);}
+  
+.btn {color: green; background-color: #000000;font-size: 20px;border:green solid;border-radius: 51122px;margin-top: 5px;position:relative;width: 90%;height: 40px;}
+	  
+.btn:hover {cursor: pointer;color: red;border: red solid;font-size: 22px;}
+	  
+@keyframes slidein {0% {opacity: 0%;}100% {opactiy: 100%;}}
+	  
