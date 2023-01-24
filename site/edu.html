@@ -17,67 +17,26 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 <title>Hecker.bat Home</title>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
-<h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
+<h2 class="under" id="under"><a>A Bookmarklet By: 25HoursaDay at SchoolHub</a></h2>
 	
-<button class="btn" onclick="btn1()">Bookmarklets</button>
+<button class="btn" onclick='btn("")'>Bookmarklets</button>
 <br>
-<button class="btn" onclick="btn2()">Games</button>
+<button class="btn" onclick='btn("")'>Games</button>
 <br>
-<button class="btn" onclick="btn3()">btn3</button>
+<button class="btn" onclick='btn("")'>btn3</button>
 <br>
-<button class="btn" onclick="btn4()">btn4</button>
+<button class="btn" onclick='btn("")'>btn4</button>
 <br>
-<button class="btn" onclick="btn5()">btn5</button>
+<button class="btn" onclick='btn("")'>btn5</button>
 <br>
-<button class="btn" onclick="btn6()">btn6</button>
+<button class="btn" onclick='btn("")'>btn6</button>
 <br>
-<button class="btn" onclick="btn7()">btn7</button>
+<button class="btn" onclick='btn("")'>btn7</button>
 <br>
-<button class="btn" onclick="btn8()">btn8</button>
+<button class="btn" onclick='btn("")'>btn8</button>
 <br>
-<button class="btn" onclick="btn9()">btn9</button>
+<button class="btn" onclick='btn("")'>btn9</button>
 <br>
 	
-<script>
-function btn1() {
-let win1 = window.open();
-fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/bookmarklets.html")
-.then((result) => { return result.text(); })
-.then((content) => { win1.document.write(content); });
-}
-function btn2() {
-let win2 = window.open();
-fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam.html")
-.then((result) => { return result.text(); })
-.then((content) => { win2.document.write(content); });
-} 
-function btn3() {
-alert("btn3");
-} 
-function btn4() {
-alert("btn4");
-}
-function btn5() {
-alert("btn5");
-} 
-function btn6() {
-alert("btn6");
-}
-function btn7() {
-alert("btn7");
-} 
-function btn8() {
-alert("btn8");
-}
-function btn9() {
-alert("btn9");
-}
-	
-document.oncontextmenu = rightClick;
-function rightClick(clickEvent) {clickEvent.preventDefault();};  
-document.addEventListener('keydown', (e) => {
-if (e.key.toLowerCase() === 'i' && e.ctrlKey && e.shiftKey) {e.preventDefault(); alert("error");} 
-else if (e.key.toLowerCase() === 'u' && e.ctrlKey) {e.preventDefault(); alert("error");} 
-else if (e.key.toLowerCase() === 's' && e.ctrlKey) {e.preventDefault(); alert("error");}});		
-</script> 
+<script src="https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/index.js"></script> 
 </div>
