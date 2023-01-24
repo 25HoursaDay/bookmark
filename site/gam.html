@@ -17,7 +17,7 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 <title>Games</title>
 <div id="main" class="main">
 <h1 class="title" id="title"><a>&#60;/Hecker.bat/&#62;</a></h1>
-<h2 class="under" id="under"><a style="font-family: "Noto Sans Mono ">Games</a></h2>
+<h2 class="under" id="under"><a style='font-family: "Noto Sans Mono"'>Games</a></h2>
 	
 <button class="btn" onclick='btn("")'>2048</button>
 <br>
@@ -37,15 +37,11 @@ body {font-family: noto sans mono;text-align: center;background-color: black;}
 <br>
 
 <script>
-	function btn(lnk) {};
-function btn1() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/2048").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn2() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/8ballpool").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn3() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/agarioclone").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn4() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/bbll").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn5() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn6() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/cookieclicker").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn7() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
-function btn8() {let win = window.open();fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/").then((result) => { return result.text(); }).then((content) => { win.document.write(content); });}
+function btn(lnk) { let win = window.open();
+fetch("https://raw.githubusercontent.com/25HoursaDay/bookmark/main/site/gam/"+lnk)
+	.then((result) => { return result.text(); })
+	.then((content) => { win.document.write(content); });
+}
 
 	
 	
