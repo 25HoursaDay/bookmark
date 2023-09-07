@@ -1,0 +1,21 @@
+  <body>
+    <div id="bookmarklet">
+      <p>Run Bookmarklet</p>
+      <input type="text" id="bookmarklet_input">
+      <button id="bookmarklet_enter" onClick="bookmarklet()">
+        Enter
+      </button>
+    </div>
+  </body>
+  <script>
+    function bookmarklet() {
+      var bookmarklet_input = document.getElementById("bookmarklet_input");
+      try {
+        console.log(bookmarklet_input.value);
+        bookmarklet_input.value = "";
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+  </script>
